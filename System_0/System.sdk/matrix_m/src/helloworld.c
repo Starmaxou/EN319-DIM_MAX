@@ -42,7 +42,7 @@ int main()
 {
     init_platform();
 
-    printf("Hello World of Codesign MULT %d\n\r", (int)V_SIZE);
+    printf("Hello World of Codesign MULT %d\n\r system 0\n\r", (int)V_SIZE);
 
 	//initializing timer
 	XTmrCtr TimerCounter;

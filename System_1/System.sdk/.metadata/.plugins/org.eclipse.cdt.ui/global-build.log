@@ -1,0 +1,66 @@
+08:56:52 **** Incremental Build of configuration Debug for project matrix_m ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
+08:57:35 **** Incremental Build of configuration Debug for project matrix_m ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../matrix_m_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:27: warning: passing argument 3 of 'mat_mult_b' from incompatible pointer type [-Wincompatible-pointer-types]
+    mat_mult_b(MatA, MatB, &MatRes);
+                           ^
+In file included from ../src/helloworld.c:12:0:
+../src/matrix_operations.h:17:6: note: expected 'unsigned int (*)[6]' but argument is of type 'unsigned int (*)[6][6]'
+ void mat_mult_b (unsigned int A[][V_SIZE], unsigned int B[][V_SIZE], unsigned int Res[][V_SIZE]);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: matrix_m.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../matrix_m_bsp/ps7_cortexa9_0/lib -o "matrix_m.elf"  ./src/helloworld.o ./src/matrix_operations.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: matrix_m.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size matrix_m.elf  |tee "matrix_m.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75772	   2596	  23344	 101712	  18d50	matrix_m.elf
+Finished building: matrix_m.elf.size
+ 
+08:59:52 **** Auto Build of configuration Debug for project matrix_m ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../matrix_m_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:27: warning: passing argument 3 of 'mat_mult_b' from incompatible pointer type [-Wincompatible-pointer-types]
+    mat_mult_b(MatA, MatB, &MatRes);
+                           ^
+In file included from ../src/helloworld.c:12:0:
+../src/matrix_operations.h:17:6: note: expected 'unsigned int (*)[6]' but argument is of type 'unsigned int (*)[6][6]'
+ void mat_mult_b (unsigned int A[][V_SIZE], unsigned int B[][V_SIZE], unsigned int Res[][V_SIZE]);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: matrix_m.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../matrix_m_bsp/ps7_cortexa9_0/lib -o "matrix_m.elf"  ./src/helloworld.o ./src/matrix_operations.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: matrix_m.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size matrix_m.elf  |tee "matrix_m.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75784	   2596	  23344	 101724	  18d5c	matrix_m.elf
+Finished building: matrix_m.elf.size
+ 
+09:10:38 **** Incremental Build of configuration Debug for project matrix_m ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Rien à faire pour « main-build ».
