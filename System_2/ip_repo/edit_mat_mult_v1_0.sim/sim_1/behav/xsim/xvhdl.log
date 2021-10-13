@@ -1,0 +1,7 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier.vhd" into library mat_mult_v1_00_a
+INFO: [VRFC 10-307] analyzing entity matrix_multiplier
+ERROR: [VRFC 10-1253] positional association cannot follow named association [/net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier.vhd:52]
+ERROR: [VRFC 10-1504] unit rtl ignored due to previous errors [/net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier.vhd:40]
+INFO: [VRFC 10-240] VHDL file /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity matrix_multiplier_bench

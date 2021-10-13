@@ -1,0 +1,76 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: test nb 0 successfull passed, computed latency is1
+Time: 15 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 1 failed
+Time: 325 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 2 failed
+Time: 635 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 3 failed
+Time: 945 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 0 successfull passed, computed latency is1
+Time: 15 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 1 failed
+Time: 325 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 2 failed
+Time: 635 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 3 failed
+Time: 945 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 4 failed
+Time: 1255 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 5 failed
+Time: 1565 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 6 failed
+Time: 1875 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 7 failed
+Time: 2185 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 8 failed
+Time: 2495 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 9 failed
+Time: 2805 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 10 failed
+Time: 3115 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 11 failed
+Time: 3425 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 12 failed
+Time: 3735 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 13 failed
+Time: 4045 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 14 failed
+Time: 4355 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 15 failed
+Time: 4665 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 16 failed
+Time: 4975 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 17 failed
+Time: 5285 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 18 failed
+Time: 5595 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 19 failed
+Time: 5905 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 20 failed
+Time: 6215 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 21 failed
+Time: 6525 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 22 failed
+Time: 6835 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 23 failed
+Time: 7145 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 24 failed
+Time: 7455 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 25 failed
+Time: 7765 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 26 failed
+Time: 8075 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 27 failed
+Time: 8385 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 28 failed
+Time: 8695 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 29 failed
+Time: 9005 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 30 failed
+Time: 9315 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 31 failed
+Time: 9625 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd
+Note: test nb 32 failed
+Time: 9935 ns  Iteration: 0  Process: /matrix_multiplier_bench/TEST_Sequencer  File: /net/s/dpetitjean/Documents/Codesign_projectfiles/ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd

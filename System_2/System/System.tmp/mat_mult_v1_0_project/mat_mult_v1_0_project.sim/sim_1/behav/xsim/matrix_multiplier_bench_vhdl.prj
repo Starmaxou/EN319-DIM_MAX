@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl mat_mult_v1_00_a  \
+"../../../../../../../ip_repo/mat_mult_1.0/src/definitions_mult.vhd" \
+"../../../../../../../ip_repo/mat_mult_1.0/src/vect_multiplier.vhd" \
+"../../../../../../../ip_repo/mat_mult_1.0/src/matrix_multiplier.vhd" \
+"../../../../../../../ip_repo/mat_mult_1.0/src/matrix_multiplier_dummy.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/mat_mult_1.0/src/matrix_multiplier_bench.vhd" \
+
+# Do not sort compile order
+nosort

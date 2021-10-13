@@ -1,0 +1,1 @@
+-wto "c04628f8848f42a29f183c576d95474c" --incr --debug "typical" --relax --mt "8" -L "mat_mult_v1_00_a" -L "xil_defaultlib" -L "secureip" --snapshot "matrix_multiplier_bench_behav" "xil_defaultlib.matrix_multiplier_bench" -log "elaborate.log" 
