@@ -1,0 +1,17 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ipshared/7f4e/hdl/mat_mult_v1_0.vhd" \
+
+vhdl mat_mult_v1_00_a  \
+"../../../bd/design_1/ipshared/7f4e/src/definitions_mult.vhd" \
+"../../../bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd" \
+"../../../bd/design_1/ipshared/7f4e/src/matrix_multiplier_dummy.vhd" \
+"../../../bd/design_1/ipshared/7f4e/src/matrix_multiplier.vhd" \
+"../../../bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_mat_mult_0_0/sim/design_1_mat_mult_0_0.vhd" \
+
+nosort

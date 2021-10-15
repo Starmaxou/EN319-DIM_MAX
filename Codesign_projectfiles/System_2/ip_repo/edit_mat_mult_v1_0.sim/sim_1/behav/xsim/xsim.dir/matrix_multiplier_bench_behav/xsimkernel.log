@@ -1,0 +1,7 @@
+Running: xsim.dir/matrix_multiplier_bench_behav/xsimk -simmode gui -wdb matrix_multiplier_bench_behav.wdb -simrunnum 0 -socket 39822
+Design successfully loaded
+Design Loading Memory Usage: 42364 KB (Peak: 42364 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 124104 KB (Peak: 189640 KB)
+Simulation CPU Usage: 50 ms

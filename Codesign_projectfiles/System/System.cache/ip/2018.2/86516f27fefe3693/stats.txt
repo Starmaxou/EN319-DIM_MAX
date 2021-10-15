@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Fri Oct 15 12:05:39 UTC 2021
+VLNV: xilinx.com:ip:axi_timer:2.0
+SynthRuntime: 59

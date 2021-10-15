@@ -1,0 +1,1862 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 15 15:26:07 2021
+# Process ID: 18560
+# Current directory: /net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.runs/design_1_mat_mult_0_0_synth_1
+# Command line: vivado -log design_1_mat_mult_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mat_mult_0_0.tcl
+# Log file: /net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.runs/design_1_mat_mult_0_0_synth_1/design_1_mat_mult_0_0.vds
+# Journal file: /net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.runs/design_1_mat_mult_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_mat_mult_0_0.tcl -notrace
+Command: synth_design -top design_1_mat_mult_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18584 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1451.004 ; gain = 83.824 ; free physical = 7480 ; free virtual = 27530
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1090] 'mat_mult_v1_0' is not compiled in library mat_mult_v1_00_a [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ip/design_1_mat_mult_0_0/synth/design_1_mat_mult_0_0.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_mat_mult_0_0' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ip/design_1_mat_mult_0_0/synth/design_1_mat_mult_0_0.vhd:85]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'mat_mult_v1_0' declared at '/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/hdl/mat_mult_v1_0.vhd:5' bound to instance 'U0' of component 'mat_mult_v1_0' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ip/design_1_mat_mult_0_0/synth/design_1_mat_mult_0_0.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'mat_mult_v1_0' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/hdl/mat_mult_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'mat_mult_v1_0_S00_AXI' declared at '/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:9' bound to instance 'mat_mult_v1_0_S00_AXI_inst' of component 'mat_mult_v1_0_S00_AXI' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/hdl/mat_mult_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mat_mult_v1_0_S00_AXI' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:90]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-226] default block is never used [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:477]
+INFO: [Synth 8-226] default block is never used [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:1723]
+WARNING: [Synth 8-614] signal 'Matrix_P' is read in the process but is not in the sensitivity list [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:1718]
+INFO: [Synth 8-638] synthesizing module 'matrix_multiplier_struct' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/matrix_multiplier.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'vect_multiplier' [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'vect_multiplier' (1#1) [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'matrix_multiplier_struct' (2#1) [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/matrix_multiplier.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg72_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:418]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg73_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:419]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg74_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:420]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg75_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:421]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg76_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:422]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg77_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:423]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg78_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:424]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg79_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:425]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg80_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:426]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg81_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:427]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg82_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:428]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg83_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:429]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg84_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:430]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg85_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:431]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg86_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:432]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg87_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:433]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg88_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:434]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg89_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:435]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg90_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:436]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg91_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:437]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg92_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:438]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg93_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:439]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg94_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:440]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg95_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:441]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg96_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:442]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg97_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg98_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:444]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg99_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:445]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg100_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:446]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg101_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:447]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg102_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:448]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg103_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:449]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg104_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:450]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg105_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:451]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg106_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:452]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg107_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:453]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:475]
+INFO: [Synth 8-256] done synthesizing module 'mat_mult_v1_0_S00_AXI' (3#1) [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/mat_mult_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'mat_mult_v1_0' (4#1) [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/hdl/mat_mult_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mat_mult_0_0' (5#1) [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ip/design_1_mat_mult_0_0/synth/design_1_mat_mult_0_0.vhd:85]
+WARNING: [Synth 8-3331] design matrix_multiplier_struct has unconnected port rst_n
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design mat_mult_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1587.645 ; gain = 220.465 ; free physical = 7421 ; free virtual = 27473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1587.645 ; gain = 220.465 ; free physical = 7436 ; free virtual = 27488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1587.645 ; gain = 220.465 ; free physical = 7436 ; free virtual = 27488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2038.637 ; gain = 3.004 ; free physical = 6983 ; free virtual = 27035
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7239 ; free virtual = 27291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7239 ; free virtual = 27291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7239 ; free virtual = 27291
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7246 ; free virtual = 27300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |mat_mult_v1_0_S00_AXI__GB0 |           1|     31831|
+|2     |mat_mult_v1_0_S00_AXI__GB1 |           1|     12827|
+|3     |mat_mult_v1_0_S00_AXI__GB2 |           1|     18114|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 36    
++---Registers : 
+	              192 Bit    Registers := 36    
+	               32 Bit    Registers := 129   
+	               16 Bit    Registers := 216   
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	 128 Input     32 Bit        Muxes := 92    
+	   2 Input     32 Bit        Muxes := 92    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vect_multiplier__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module vect_multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+Module mat_mult_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 93    
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	 128 Input     32 Bit        Muxes := 92    
+	   2 Input     32 Bit        Muxes := 92    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[3] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[4] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_a_i_reg[5] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:44]
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[0] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[1] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element vector_in_b_i_reg[2] was removed.  [/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ipshared/7f4e/src/vect_multiplier.vhd:45]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[0] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[1] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[2] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[3] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[4] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+DSP Report: Generating DSP prod_vec_logic0, operation Mode is: A2*B2.
+DSP Report: register vector_in_b_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: register vector_in_a_i_reg[5] is absorbed into DSP prod_vec_logic0.
+DSP Report: operator prod_vec_logic0 is absorbed into DSP prod_vec_logic0.
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_mat_mult_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (mat_mult_v1_0_S00_AXI_insti_0/aw_en_reg)
+INFO: [Synth 8-3886] merging instance 'mat_mult_v1_0_S00_AXI_insti_0/axi_rresp_reg[0]' (FDRE) to 'mat_mult_v1_0_S00_AXI_insti_0/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mat_mult_v1_0_S00_AXI_insti_0/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mat_mult_v1_0_S00_AXI_insti_0/axi_bresp_reg[0]' (FDRE) to 'mat_mult_v1_0_S00_AXI_insti_0/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mat_mult_v1_0_S00_AXI_insti_0/\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:12 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7155 ; free virtual = 27230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vect_multiplier | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |mat_mult_v1_0_S00_AXI__GB0 |           1|     33257|
+|2     |mat_mult_v1_0_S00_AXI__GB1 |           1|      5183|
+|3     |mat_mult_v1_0_S00_AXI__GB2 |           1|      2329|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:23 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7024 ; free virtual = 27099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:23 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7023 ; free virtual = 27099
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |mat_mult_v1_0_S00_AXI__GB0 |           1|     33257|
+|2     |mat_mult_v1_0_S00_AXI__GB1 |           1|      5183|
+|3     |mat_mult_v1_0_S00_AXI__GB2 |           1|      2329|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:25 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7030 ; free virtual = 27105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   576|
+|2     |DSP48E1 |   216|
+|3     |LUT1    |     1|
+|4     |LUT2    |     1|
+|5     |LUT3    |  2199|
+|6     |LUT4    |  1582|
+|7     |LUT5    |  1044|
+|8     |LUT6    |  2245|
+|9     |MUXF7   |   544|
+|10    |MUXF8   |   256|
+|11    |FDRE    |  4146|
+|12    |FDSE    |    25|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------+-------------------------+------+
+|      |Instance                                            |Module                   |Cells |
++------+----------------------------------------------------+-------------------------+------+
+|1     |top                                                 |                         | 12835|
+|2     |  U0                                                |mat_mult_v1_0            | 12835|
+|3     |    mat_mult_v1_0_S00_AXI_inst                      |mat_mult_v1_0_S00_AXI    | 12835|
+|4     |      mat_mul                                       |matrix_multiplier_struct |  8132|
+|5     |        \GEN_LIGNE[0].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier          |   209|
+|6     |        \GEN_LIGNE[0].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_0        |   209|
+|7     |        \GEN_LIGNE[0].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_1        |   209|
+|8     |        \GEN_LIGNE[0].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_2        |   305|
+|9     |        \GEN_LIGNE[0].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_3        |   209|
+|10    |        \GEN_LIGNE[0].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_4        |   209|
+|11    |        \GEN_LIGNE[1].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier_5        |   209|
+|12    |        \GEN_LIGNE[1].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_6        |   241|
+|13    |        \GEN_LIGNE[1].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_7        |   209|
+|14    |        \GEN_LIGNE[1].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_8        |   209|
+|15    |        \GEN_LIGNE[1].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_9        |   209|
+|16    |        \GEN_LIGNE[1].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_10       |   305|
+|17    |        \GEN_LIGNE[2].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier_11       |   209|
+|18    |        \GEN_LIGNE[2].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_12       |   209|
+|19    |        \GEN_LIGNE[2].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_13       |   209|
+|20    |        \GEN_LIGNE[2].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_14       |   241|
+|21    |        \GEN_LIGNE[2].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_15       |   209|
+|22    |        \GEN_LIGNE[2].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_16       |   209|
+|23    |        \GEN_LIGNE[3].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier_17       |   209|
+|24    |        \GEN_LIGNE[3].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_18       |   273|
+|25    |        \GEN_LIGNE[3].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_19       |   209|
+|26    |        \GEN_LIGNE[3].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_20       |   209|
+|27    |        \GEN_LIGNE[3].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_21       |   209|
+|28    |        \GEN_LIGNE[3].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_22       |   241|
+|29    |        \GEN_LIGNE[4].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier_23       |   209|
+|30    |        \GEN_LIGNE[4].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_24       |   209|
+|31    |        \GEN_LIGNE[4].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_25       |   209|
+|32    |        \GEN_LIGNE[4].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_26       |   369|
+|33    |        \GEN_LIGNE[4].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_27       |   209|
+|34    |        \GEN_LIGNE[4].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_28       |   209|
+|35    |        \GEN_LIGNE[5].GEN_VECT_MULT[0].vect_mult_i  |vect_multiplier_29       |   209|
+|36    |        \GEN_LIGNE[5].GEN_VECT_MULT[1].vect_mult_i  |vect_multiplier_30       |   241|
+|37    |        \GEN_LIGNE[5].GEN_VECT_MULT[2].vect_mult_i  |vect_multiplier_31       |   209|
+|38    |        \GEN_LIGNE[5].GEN_VECT_MULT[3].vect_mult_i  |vect_multiplier_32       |   209|
+|39    |        \GEN_LIGNE[5].GEN_VECT_MULT[4].vect_mult_i  |vect_multiplier_33       |   209|
+|40    |        \GEN_LIGNE[5].GEN_VECT_MULT[5].vect_mult_i  |vect_multiplier_34       |   273|
++------+----------------------------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7029 ; free virtual = 27104
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 450 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2038.637 ; gain = 220.465 ; free physical = 7107 ; free virtual = 27182
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:26 . Memory (MB): peak = 2038.637 ; gain = 671.457 ; free physical = 7117 ; free virtual = 27192
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1592 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:29 . Memory (MB): peak = 2038.637 ; gain = 683.078 ; free physical = 7116 ; free virtual = 27191
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.runs/design_1_mat_mult_0_0_synth_1/design_1_mat_mult_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.srcs/sources_1/bd/design_1/ip/design_1_mat_mult_0_0/design_1_mat_mult_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 39 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/net/s/dpetitjean/Documents/Codesign_projectfiles/System/System.runs/design_1_mat_mult_0_0_synth_1/design_1_mat_mult_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_mat_mult_0_0_utilization_synth.rpt -pb design_1_mat_mult_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2062.656 ; gain = 0.000 ; free physical = 7105 ; free virtual = 27185
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 15 15:27:55 2021...

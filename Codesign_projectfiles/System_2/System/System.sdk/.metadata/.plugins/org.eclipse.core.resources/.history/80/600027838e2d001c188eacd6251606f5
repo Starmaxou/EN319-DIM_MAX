@@ -1,0 +1,34 @@
+
+
+/***************************** Include Files *******************************/
+#include "mat_mult.h"
+
+/************************** Function Definitions ***************************/
+
+void mat_mult(unsigned int A[][V_SIZE], unsigned int B[][V_SIZE], unsigned int Res[][V_SIZE])
+{
+	//Write A and B matrix in IP
+	for (int i = 0 ; i < V_SIZE ; i++){
+		for (int j = 0 ; j < V_SIZE ; j++){
+			MAT_MULT_mWriteReg(BASEADDR_MAT_MULT, STEP_ADDR*(i*10 + j), A[i][j]);
+			MAT_MULT_mWriteReg(BASEADDR_MAT_MULT, STEP_ADDR*(i*10 + j) + MATRIX_B_ADDR_OFFSET, B[i][j]);
+		}
+	}
+
+	//Read Res matrix from IP
+	for (int i = 0 ; i < V_SIZE ; i++){
+		for (int j = 0 ; j < V_SIZE ; j++){
+			MAT_MULT_mReadReg(BASEADDR_MAT_MULT, STEP_ADDR*(i*10 + j) + MATRIX_P_ADDR_OFFSET);
+		}
+	}
+
+	/*
+	for (write_loop_index = 0 ; write_loop_index < 4; write_loop_index++)
+		MAT_MULT_mWriteReg (baseaddr, write_loop_index*4, (write_loop_index+1)*READ_WRITE_MUL_FACTOR);
+	for (read_loop_index = 0 ; read_loop_index < 4; read_loop_index++)
+		if ( MAT_MULT_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+			xil_printf ("Error reading register value at address %x\n", (int)baseaddr + read_loop_index*4);
+			return XST_FAILURE;
+		}
+	*/
+}
